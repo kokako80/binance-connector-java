@@ -4,15 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.binance</groupId>
+    <groupId>it.kokako80</groupId>
     <artifactId>binance-connector-java</artifactId>
     <version>1.9.2</version>
     <packaging>jar</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>lightweight connector to API</description>
-    <url>https://github.com/binance/binance-connector-java</url>
+    <url>https://github.com/kokako80/binance-connector-java</url>
 
     <distributionManagement>
+    <!--
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
@@ -21,6 +22,12 @@
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
+  -->
+   <repository>
+     <id>github</id>
+     <name>GitHub OWNER Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/kokako80/binance-connector-java</url>
+   </repository>
     </distributionManagement>
 
     <licenses>
@@ -32,15 +39,15 @@
 
     <developers>
         <developer>
-            <name>Binance</name>
+            <name>kokako80</name>
             <email>contact@binance.com</email>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/binance/binance-connector-java.git</connection>
-        <developerConnection>scm:git:ssh://github.com:binance/binance-connector-java.git</developerConnection>
-        <url>https://github.com/biance/binance-connector-java</url>
+        <connection>scm:git:git://github.com/kokako80/binance-connector-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com:kokako80/binance-connector-java.git</developerConnection>
+        <url>https://github.com/kokako80/binance-connector-java</url>
     </scm>
     <build>
         <plugins>
